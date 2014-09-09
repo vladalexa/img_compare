@@ -31,10 +31,10 @@ def main():
     t1=time.clock()
     img1 = Image.open('screenshotimage2.png')
     img2 = Image.open('screenshotimage.png')
-    img1.crop((0,0,160,600)).save('pscreen.jpg')
-    img2.crop((0,0,160,600)).save('pscreen2.jpg')
-    im1 = Image.open('pscreen.jpg')
-    im2 = Image.open('pscreen2.jpg')
+    img1.crop((0,0,160,600)).save('pscreen.png')
+    img2.crop((0,0,160,600)).save('pscreen2.png')
+    im1 = Image.open('pscreen.png')
+    im2 = Image.open('pscreen2.png')
 
 
     if im1.size != im2.size or im1.getbands() != im2.getbands():

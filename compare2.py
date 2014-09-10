@@ -19,7 +19,7 @@ desired_cap = {'os': 'Windows', 'os_version': '8', 'browser': 'chrome', 'browser
 driver = webdriver.Remote(
     command_executor='http://arslpnpi1:ngUasHjNZDJVHTAxXX8Y@hub.browserstack.com:80/wd/hub',
     desired_capabilities=desired_cap)
-driver.get("http://test.sad.affectv.co.uk/build/53077dc9c2590814b73252d1/demo.html")
+driver.get("http://test.sad.affectv.co/build/53077dc9c2590814b73252d1/demo.html")
 driver.maximize_window()
 time.sleep(5)
 # element = WebDriverWait(driver, 10).until(

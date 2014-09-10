@@ -24,7 +24,7 @@ driver.maximize_window()
 time.sleep(5)
 # element = WebDriverWait(driver, 10).until(
 #         EC.presence_of_element_located((By.XPATH, "/html/body/object/embed")))
-driver.get_screenshot_as_file('/home/vlad/PycharmProjects/img_compare/screenshotimage.png')
+driver.get_screenshot_as_file('screenshotimage.png')
 driver.quit()
 
 def main():

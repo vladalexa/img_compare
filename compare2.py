@@ -47,6 +47,8 @@ def main():
         m2 = numpy.array([p[band_index] for p in im2.getdata()]).reshape(*im2.size)
         s += numpy.sum(numpy.abs(m1-m2))
     print s
+    if s>25000:
+        raise Exception('different')
     print(time.clock()-t1)
     print(time.clock()-t0)
 

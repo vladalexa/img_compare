@@ -39,7 +39,7 @@ def main():
         s += numpy.sum(numpy.abs(m1-m2))
     print s
     print(time.clock()-t1 )
-    print(time.clock()-t1 )
+    
 
 if __name__ == "__main__":
     sys.exit(main())

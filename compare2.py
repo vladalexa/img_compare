@@ -38,6 +38,7 @@ def main():
         m2 = numpy.array([p[band_index] for p in img2.getdata()]).reshape(*img2.size)
         s += numpy.sum(numpy.abs(m1-m2))
     print s
+    
     print(time.clock()-t1 )
     
 
